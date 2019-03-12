@@ -1,0 +1,32 @@
+﻿@model Larich.Achiever.Web.ViewModels.Achievers.AchieversViewModel
+@{
+    ViewData["Title"] = "Achievers";
+    Layout = "~/Views/Shared/_BlogWithWidgets.cshtml";
+}
+
+<div id="myCarousel" class="carousel slide"> 
+    <!-- Carousel items --> 
+    <div class="carousel-inner">
+        <div class="active item">
+            <img class="card-img-top" src="~/achievers/@Model.AchieverId/banner.png" alt="Card image cap" style="max-width:750px;max-height:300px;">
+
+        </div> <div class="item">
+    <img class="card-img-top" src="~/achievers/@Model.AchieverId/banner.png" alt="Card image cap" style="max-width:750px;max-height:300px;">
+        </div> 
+     </div> <!-- Carousel nav --> 
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a> 
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a> 
+</div>
+
+<h2>@Model.Title</h2>
+@Html.Raw(Model.Content)
+
+
+
+
+
+
+
+
+
+
